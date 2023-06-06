@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "494693988563",
+    "project_id": "wagwan-beb57",
+    "storage_bucket": "wagwan-beb57.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:494693988563:android:2453731dad74277c23fc26",
+        "android_client_info": {
+          "package_name": "com.example.wagwan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "494693988563-d6ojrs23bkkh3epju886qgbveth4ejuh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbFbKvuxM-Eh9ESd27ZJ3m2sxNmz9IXkY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "494693988563-d6ojrs23bkkh3epju886qgbveth4ejuh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

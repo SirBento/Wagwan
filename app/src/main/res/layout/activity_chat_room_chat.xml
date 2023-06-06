@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChatRoomChatActivity">
+
+    <include
+        android:id="@+id/chatRoom_chat_bar_layout"
+        layout="@layout/app_bar_layout">
+
+    </include>
+
+
+    <ScrollView
+        android:id="@+id/my_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/my_linear_layout"
+        android:layout_below="@+id/chatRoom_chat_bar_layout"
+        android:background="@drawable/w2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/chatRoom_chat_text_display"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="60dp"
+                android:padding="10dp"
+                android:textAllCaps="false"
+                android:textColor="@android:color/background_dark"
+                android:textSize="20sp">
+
+            </TextView>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/my_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        >
+        
+        <EditText
+            android:id="@+id/input_chatroom_message"
+            android:layout_width="327dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/write_your_message_here"
+            android:background="@drawable/rounded_corners"
+            android:fontFamily="serif-monospace"
+            android:padding="19dp"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:textStyle="normal"
+            />
+
+        <ImageButton
+            android:id="@+id/send_message_button"
+            android:layout_width="73dp"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/text_send"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            >
+
+        </ImageButton>
+
+
+
+
+    </LinearLayout>
+    
+
+    
+
+</RelativeLayout>

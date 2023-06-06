@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="../../../../../layout/custom_preview.xml" value="0.103125" />
+        <entry key="app/src/main/res/drawable/about.xml" value="0.1045" />
+        <entry key="app/src/main/res/drawable/button.xml" value="0.1045" />
+        <entry key="app/src/main/res/drawable/buttons.xml" value="0.1045" />
+        <entry key="app/src/main/res/drawable/inputs.xml" value="0.1025" />
+        <entry key="app/src/main/res/drawable/receiver_messages_layout.xml" value="0.1045" />
+        <entry key="app/src/main/res/drawable/rounded_corners.xml" value="0.1005" />
+        <entry key="app/src/main/res/drawable/sender_messeges_layout.xml" value="0.1045" />
+        <entry key="app/src/main/res/drawable/text_send.xml" value="0.1005" />
+        <entry key="app/src/main/res/layout-v21/activity_chat.xml" value="0.23958333333333334" />
+        <entry key="app/src/main/res/layout-v21/app_bar_layout.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_chat.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/activity_chat_room_chat.xml" value="0.18125" />
+        <entry key="app/src/main/res/layout/activity_find_friends.xml" value="0.18125" />
+        <entry key="app/src/main/res/layout/activity_forgot_password.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/activity_image_viwer.xml" value="0.18125" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_no_internet.xml" value="0.24427083333333333" />
+        <entry key="app/src/main/res/layout/activity_phone_login.xml" value="0.125" />
+        <entry key="app/src/main/res/layout/activity_profile.xml" value="0.18125" />
+        <entry key="app/src/main/res/layout/activity_register.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_settings.xml" value="0.17857142857142858" />
+        <entry key="app/src/main/res/layout/activity_splash_screen.xml" value="0.24427083333333333" />
+        <entry key="app/src/main/res/layout/app_bar_layout.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/custom_chat_bar.xml" value="0.18125" />
+        <entry key="app/src/main/res/layout/custom_messages_layout.xml" value="0.18125" />
+        <entry key="app/src/main/res/layout/fragment_chats.xml" value="0.18125" />
+        <entry key="app/src/main/res/layout/fragment_contacts.xml" value="0.17857142857142858" />
+        <entry key="app/src/main/res/layout/fragment_groups.xml" value="0.125" />
+        <entry key="app/src/main/res/layout/fragment_request.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/users_display_layout.xml" value="0.22916666666666666" />
+        <entry key="app/src/main/res/menu/options_menu.xml" value="0.1425925925925926" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK" />
+</project>
