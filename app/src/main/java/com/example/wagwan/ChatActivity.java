@@ -51,17 +51,19 @@ import de.hdodenhof.circleimageview.CircleImageView;
 
 public class ChatActivity extends AppCompatActivity
 {
-    private  String messageReceiverID,messageReceiverName,messageReceiverImage,messageSenderID;
+
     private TextView userName ,userLastSeen,messageInputText;
     private CircleImageView userImage;
     private Toolbar chatToolBar;
     private FirebaseAuth mAuth;
     private DatabaseReference RootRef;
     private ImageButton sendMessageButton,sendFilesButton;
-    private final List<Messages> messagesList = new ArrayList<>();
+    private RecyclerView userMessagesList;
+    private  String messageReceiverID,messageReceiverName,messageReceiverImage,messageSenderID;
+    private  List<Messages> messagesList ;
     private LinearLayoutManager linearLayoutManager;
     private MessageAdapter messageAdapter;
-    private RecyclerView userMessagesList;
+
 
     private String saveCurrentTime, saveCurrentDate , checker = " ", myUrl = " ";
     private StorageTask uploadTask;
@@ -180,7 +182,7 @@ public class ChatActivity extends AppCompatActivity
         sendMessageButton = findViewById(R.id.send_message_bnt);
         sendFilesButton = findViewById(R.id.send_files_btn);
         messageInputText=findViewById(R.id.input_message);
-
+        messagesList = new ArrayList<>();
         messageAdapter = new MessageAdapter(messagesList);
         userMessagesList = findViewById(R.id.private_messages_list_of_users);
         linearLayoutManager = new LinearLayoutManager(this);

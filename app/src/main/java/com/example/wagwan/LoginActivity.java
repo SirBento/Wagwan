@@ -29,7 +29,6 @@ public class LoginActivity extends AppCompatActivity
     private  FirebaseAuth mAuth;
     private  ProgressDialog loadingBar;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -122,7 +121,6 @@ public class LoginActivity extends AppCompatActivity
                                     "Account not verified. Please check your email to verify your account the Login",
                                     Toast.LENGTH_LONG).show();
                         }
-
 
                     }else {
                         loadingBar.dismiss();

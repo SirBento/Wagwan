@@ -74,10 +74,7 @@ public class SplashScreen extends AppCompatActivity {
                     {
                         SendUserToLoginActivity();
                         finish();
-
-                    }
-                    else
-                    {
+                    }else {
                         updateUserStatus("online");
                         VerifyUserExistence();
                     }

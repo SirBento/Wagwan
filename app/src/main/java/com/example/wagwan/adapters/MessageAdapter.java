@@ -35,7 +35,7 @@ import de.hdodenhof.circleimageview.CircleImageView;
 public class MessageAdapter extends RecyclerView.Adapter<MessageAdapter.MessageViewHolder>
 {
     private List<Messages> userMessagesList;
-    private FirebaseAuth mAuth;
+    public FirebaseAuth mAuth;
     private DatabaseReference usersRef;
 
     public MessageAdapter(List<Messages> userMessagesList)
@@ -43,11 +43,13 @@ public class MessageAdapter extends RecyclerView.Adapter<MessageAdapter.MessageV
         this.userMessagesList = userMessagesList;
     }
 
+
     public class MessageViewHolder extends RecyclerView.ViewHolder
     {
         public TextView senderMessageText, receiverMessageText;
         public CircleImageView receiverProfileImage;
         public ImageView messageSenderPicture, messageReceiverPicture;
+
 
         public MessageViewHolder(@NonNull View itemView)
         {
