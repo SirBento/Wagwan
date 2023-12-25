@@ -35,7 +35,6 @@ public class SplashScreen extends AppCompatActivity {
     private LottieAnimationView lottieAnimationView;
     private TextView myName;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

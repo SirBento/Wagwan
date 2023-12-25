@@ -13,14 +13,12 @@ public class TabsAccessorAdapter extends FragmentPagerAdapter {
         super(fm);
     }
 
-
     @NonNull
     @Override
     public Fragment getItem(int position) {
 
         switch (position)
         {
-
             case 1:
                 return new GroupsFragment();
 
@@ -63,7 +61,6 @@ public class TabsAccessorAdapter extends FragmentPagerAdapter {
 
             default:
                 return null;
-
         }
 
     }

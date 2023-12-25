@@ -51,7 +51,6 @@ import de.hdodenhof.circleimageview.CircleImageView;
 
 public class ChatActivity extends AppCompatActivity
 {
-
     private TextView userName ,userLastSeen,messageInputText;
     private CircleImageView userImage;
     private Toolbar chatToolBar;
@@ -63,8 +62,6 @@ public class ChatActivity extends AppCompatActivity
     private  List<Messages> messagesList ;
     private LinearLayoutManager linearLayoutManager;
     private MessageAdapter messageAdapter;
-
-
     private String saveCurrentTime, saveCurrentDate , checker = " ", myUrl = " ";
     private StorageTask uploadTask;
     private Uri fileUri;
