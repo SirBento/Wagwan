@@ -47,7 +47,6 @@ public class SplashScreen extends AppCompatActivity {
         YoYo.with(Techniques.Pulse).duration(2000).repeat(10).playOn(myName);
 
 
-
 //check if the device has internet connection first
         if(!haveNetworkConnection()){
 
@@ -86,15 +85,12 @@ public class SplashScreen extends AppCompatActivity {
 
 
 
-
-
     private void VerifyUserExistence()
     {
         String currentUserId = mAuth.getCurrentUser().getUid();
 
         RootRef.child("Users").child(currentUserId).addValueEventListener(new ValueEventListener()
         {
-
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot)
             {
@@ -110,9 +106,7 @@ public class SplashScreen extends AppCompatActivity {
 
             @Override
             public void onCancelled(@NonNull DatabaseError databaseError)
-            {
-
-            }
+            {}
         });
     }
 
@@ -125,13 +119,10 @@ public class SplashScreen extends AppCompatActivity {
         finish();
     }
 
-
     private void SendUserToSettingsActivity()
     {
         Intent SettingsIntent = new Intent(SplashScreen.this,SettingsActivity.class);
-
         startActivity(SettingsIntent);
-
     }
 
 
