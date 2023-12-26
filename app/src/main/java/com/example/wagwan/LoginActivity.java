@@ -50,7 +50,6 @@ public class LoginActivity extends AppCompatActivity
             public void onClick(View v)
             {
                 SendUserToRegisterActivity();
-
             }
 
 
@@ -59,12 +58,8 @@ public class LoginActivity extends AppCompatActivity
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 AllowUserToLogin();
-
             }
-
-
         });
 
         phoneLoginButton.setOnClickListener(new View.OnClickListener() {
@@ -72,7 +67,6 @@ public class LoginActivity extends AppCompatActivity
             public void onClick(View v) {
 
                 startActivity(new Intent( LoginActivity.this,PhoneLoginActivity.class));
-
             }
 
 
@@ -90,7 +84,6 @@ public class LoginActivity extends AppCompatActivity
             YoYo.with(Techniques.Shake).duration(1000).repeat(2).playOn(userEmail);
             YoYo.with(Techniques.Shake).duration(1000).repeat(2).playOn(userPassword);
             return;
-
         }else {
 
             loadingBar.setTitle("Sign In");
