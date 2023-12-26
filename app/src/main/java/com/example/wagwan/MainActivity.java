@@ -131,8 +131,6 @@ public class MainActivity extends AppCompatActivity
     }
 
 
-
-
     private void SendUserToLoginActivity()
     {
         Intent LoginIntent = new Intent(MainActivity.this,LoginActivity.class);
@@ -175,15 +173,9 @@ public class MainActivity extends AppCompatActivity
                 String chatRoomName = chatRoomField.getText().toString();
 
                 if(TextUtils.isEmpty(chatRoomName))
-                {
-                    Toast.makeText(MainActivity.this, "Please Give A ChatRoom Name.... ", Toast.LENGTH_SHORT).show();
-                    
-                }
-
+                {  Toast.makeText(MainActivity.this, "Please Give A ChatRoom Name.... ", Toast.LENGTH_SHORT).show(); }
                 else
-                {
-                      CreateNewChatRoom(chatRoomName);
-                }
+                { CreateNewChatRoom(chatRoomName);}
             }
         });
 
@@ -191,13 +183,10 @@ public class MainActivity extends AppCompatActivity
         builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which)
-            {
-                dialog.cancel();
-            }
+            { dialog.cancel(); }
         });
 
         builder.show();
-
     }
 
     private void CreateNewChatRoom(final String chatRoomName)
