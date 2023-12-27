@@ -41,7 +41,6 @@ public class ContactsFragment extends Fragment
         // Required empty public constructor
     }
 
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -56,7 +55,6 @@ public class ContactsFragment extends Fragment
         myContactsList = ContactsView.findViewById(R.id.contact_list);
         myContactsList.setLayoutManager(new LinearLayoutManager(getContext()));
         return  ContactsView;
-
     }
 
     @Override
@@ -68,11 +66,8 @@ public class ContactsFragment extends Fragment
                         .setQuery(ContatsRef,Contacts.class)
                         .build();
 
-
         FirebaseRecyclerAdapter<Contacts, ContactsViewHolder> adapater =
                 new FirebaseRecyclerAdapter<Contacts, ContactsViewHolder>(options) {
-
-
                     @Override
                     protected void onBindViewHolder(@NonNull final ContactsViewHolder holder, int position, @NonNull Contacts model)
                     {
@@ -143,11 +138,9 @@ public class ContactsFragment extends Fragment
                         return viewHolder;
                     }
 
-
                 };
                 myContactsList.setAdapter(adapater);
                 adapater.startListening();
-
 
     }
 
