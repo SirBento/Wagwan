@@ -51,9 +51,6 @@ import java.util.Iterator;
         UsersRef = FirebaseDatabase.getInstance().getReference().child("Users");
         ChatRoomRef = FirebaseDatabase.getInstance().getReference().child("ChatRooms").child(currentChatRoomName);
 
-
-
-
         InitializeFields();
 
         GetUserInfo();
@@ -83,34 +80,24 @@ import java.util.Iterator;
              public void onChildAdded(@NonNull DataSnapshot dataSnapshot, @Nullable String s)
              {
                  if(dataSnapshot.exists())
-                 {
-                     DisplayMessages(dataSnapshot);
-                 }
+                 { DisplayMessages(dataSnapshot);}
              }
 
              @Override
              public void onChildChanged(@NonNull DataSnapshot dataSnapshot, @Nullable String s)
              {
                  if(dataSnapshot.exists())
-                 {
-                     DisplayMessages(dataSnapshot);
-                 }
+                 {DisplayMessages(dataSnapshot);}
              }
 
              @Override
-             public void onChildRemoved(@NonNull DataSnapshot dataSnapshot) {
-
-             }
+             public void onChildRemoved(@NonNull DataSnapshot dataSnapshot) {}
 
              @Override
-             public void onChildMoved(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
-
-             }
+             public void onChildMoved(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {}
 
              @Override
-             public void onCancelled(@NonNull DatabaseError databaseError) {
-
-             }
+             public void onCancelled(@NonNull DatabaseError databaseError) {}
          });
          super.onStart();
      }
