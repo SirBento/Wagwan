@@ -18,16 +18,12 @@ import java.util.ArrayList;
 import de.hdodenhof.circleimageview.CircleImageView;
 
 public class UserAdapter extends  RecyclerView.Adapter<UserAdapter.ViewHolder> {
-
     ArrayList<ChatUsers> list;
     Context context;
 
     public UserAdapter(ArrayList<ChatUsers> list, Context context) {
         this.list = list;
-        this.context = context;
-    }
-
-
+        this.context = context; }
 
     @NonNull
     @Override
@@ -66,7 +62,6 @@ public class UserAdapter extends  RecyclerView.Adapter<UserAdapter.ViewHolder> {
                 ChatIntent.putExtra("visit_user_name",users.getName());
                 ChatIntent.putExtra("visit_user_image", users.getImage());
                 context.startActivity(ChatIntent);
-
             }
         });
     }

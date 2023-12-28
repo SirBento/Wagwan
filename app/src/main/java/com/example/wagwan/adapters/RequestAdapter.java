@@ -1,4 +1,4 @@
-/*package com.example.wagwan.adapters;
+package com.example.wagwan.adapters;
 
 import android.annotation.SuppressLint;
 import android.app.AlertDialog;
@@ -48,8 +48,7 @@ public class RequestAdapter extends RecyclerView.Adapter<RequestAdapter.Requests
 
     public RequestAdapter(ArrayList<Requests> list, Context context) {
         this.list = list;
-        this.context = context;
-    }
+        this.context = context;}
 
     @NonNull
     @Override
@@ -715,7 +714,7 @@ public class RequestAdapter extends RecyclerView.Adapter<RequestAdapter.Requests
 
     }
 }
-*/
+
 
 
 
