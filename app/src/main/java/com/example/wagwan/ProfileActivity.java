@@ -59,8 +59,6 @@ public class ProfileActivity extends AppCompatActivity {
         Current_State ="new";
 
         RetriveUserInfo();
-
-
     }
 
     private void RetriveUserInfo()
@@ -96,9 +94,7 @@ public class ProfileActivity extends AppCompatActivity {
 
            @Override
            public void onCancelled(@NonNull DatabaseError databaseError)
-           {
-
-           }
+           {}
        });
     }
 
@@ -135,7 +131,6 @@ public class ProfileActivity extends AppCompatActivity {
                                     });
                                 }
 
-
                             }else {
                                 ContatsRef.child(senderUserId)
                                         .addListenerForSingleValueEvent(new ValueEventListener()
@@ -167,13 +162,9 @@ public class ProfileActivity extends AppCompatActivity {
                             ChatRequestRef.child(senderUserId).child(receiverUserId).updateChildren(reqType);
 
                         }
-
                     }
-
                     @Override
-                    public void onCancelled(@NonNull DatabaseError databaseError) {
-
-                    }
+                    public void onCancelled(@NonNull DatabaseError databaseError) { }
                 });
 
         if (!senderUserId.equals(receiverUserId))
@@ -205,8 +196,7 @@ public class ProfileActivity extends AppCompatActivity {
             });
 
         }else {
-            sendMessageRequestButton.setVisibility(View.INVISIBLE);
-        }
+            sendMessageRequestButton.setVisibility(View.INVISIBLE); }
     }
 
     private void RemoveSpecificContact()
@@ -217,7 +207,6 @@ public class ProfileActivity extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<Void> task)
                     {
-
                         if (task.isSuccessful())
                         {
                             ContatsRef.child(receiverUserId).child(senderUserId)
