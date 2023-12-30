@@ -31,13 +31,10 @@ public class PhoneLoginActivity extends AppCompatActivity {
     private PhoneAuthProvider.ForceResendingToken mResendToken;
     private FirebaseAuth mAuth;
     private ProgressDialog loadingBar;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_phone_login);
-
-
 
         mAuth=  FirebaseAuth.getInstance();
         SendVerificationCodeButton = findViewById(R.id.send_verification_code_button);
@@ -52,7 +49,6 @@ public class PhoneLoginActivity extends AppCompatActivity {
             {
 
                 String phoneNumber = InputPhoneNumber.getText().toString();
-
 
                 if(!validatePhoneNumber()){
                     // If the functions continue to return false repeat validation until true
@@ -123,12 +119,10 @@ public class PhoneLoginActivity extends AppCompatActivity {
 
                 SendVerificationCodeButton.setVisibility(View.VISIBLE);
                 InputPhoneNumber.setVisibility(View.VISIBLE);
-
                 VerifyButton.setVisibility(View.INVISIBLE);
                 InputVerificationCode.setVisibility(View.INVISIBLE);
 
             }
-
 
             public  void onCodeSent(String verificationId,
                                     PhoneAuthProvider.ForceResendingToken token){
@@ -145,7 +139,6 @@ public class PhoneLoginActivity extends AppCompatActivity {
                 InputVerificationCode.setVisibility(View.VISIBLE);
             }
         };
-
 
     }
 
