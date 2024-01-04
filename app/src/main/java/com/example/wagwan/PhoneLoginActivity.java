@@ -45,8 +45,7 @@ public class PhoneLoginActivity extends AppCompatActivity {
 
         SendVerificationCodeButton.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v)
-            {
+            public void onClick(View v) {
 
                 String phoneNumber = InputPhoneNumber.getText().toString();
 

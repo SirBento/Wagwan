@@ -42,7 +42,6 @@ public class RequestAdapter extends RecyclerView.Adapter<RequestAdapter.Requests
     private DatabaseReference ContactsRef,ChatRequestsRef;
     private FirebaseAuth mAuth;
     private String currentUserID;
-
     ArrayList<Requests> list;
     Context context;
 
@@ -56,7 +55,6 @@ public class RequestAdapter extends RecyclerView.Adapter<RequestAdapter.Requests
 
         View view = LayoutInflater.from(context).inflate(R.layout.users_display_layout, parent,false);
         return new RequestAdapter.RequestsViewHolder(view);
-
     }
 
     @Override
