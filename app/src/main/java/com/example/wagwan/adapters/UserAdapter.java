@@ -61,10 +61,8 @@ public class UserAdapter extends  RecyclerView.Adapter<UserAdapter.ViewHolder> {
                 ChatIntent.putExtra("visit_user_name",users.getName());
                 ChatIntent.putExtra("visit_user_image", users.getImage());
                 context.startActivity(ChatIntent);
-            }
-        });
+            }});
     }
-
     @Override
     public int getItemCount() {
         return list.size();

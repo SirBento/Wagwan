@@ -20,9 +20,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
 
-public class LoginActivity extends AppCompatActivity
-{
-
+public class LoginActivity extends AppCompatActivity {
     private  TextView NeedNewAccountLink, ForgetPasswordLink ;
     private  Button loginButton, phoneLoginButton;
     private  EditText userPassword,userEmail;
@@ -137,8 +135,6 @@ public class LoginActivity extends AppCompatActivity
          ForgetPasswordLink = findViewById(R.id.forget_password_link);
          loadingBar = new ProgressDialog(this);
     }
-
-
 
     private void SendUserToRegisterActivity()
     {
