@@ -43,7 +43,6 @@ import java.util.Iterator;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_chat_room_chat);
 
-
         currentChatRoomName =getIntent().getExtras().get("ChatRoomName").toString();
 
         mAuth =FirebaseAuth.getInstance();
@@ -68,7 +67,6 @@ import java.util.Iterator;
         });
 
     }
-
 
 
     

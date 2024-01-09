@@ -141,9 +141,7 @@ public class ContactsFragment extends Fragment
                 };
                 myContactsList.setAdapter(adapater);
                 adapater.startListening();
-
     }
-
 
     public static  class ContactsViewHolder extends RecyclerView.ViewHolder
     {
