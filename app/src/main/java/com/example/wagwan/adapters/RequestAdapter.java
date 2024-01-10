@@ -141,7 +141,6 @@ public class RequestAdapter extends RecyclerView.Adapter<RequestAdapter.Requests
                                                                                                             Toast.makeText(context , "Contact Saved", Toast.LENGTH_SHORT).show();
 
                                                                                                         }
-
                                                                                                     }
                                                                                                 });
 
@@ -155,7 +154,6 @@ public class RequestAdapter extends RecyclerView.Adapter<RequestAdapter.Requests
 
                                                             }
                                                         });
-
 
                                             }
 
@@ -199,7 +197,6 @@ public class RequestAdapter extends RecyclerView.Adapter<RequestAdapter.Requests
             }
         });
 
-
     }
 
     @Override
@@ -217,7 +214,6 @@ public class RequestAdapter extends RecyclerView.Adapter<RequestAdapter.Requests
         public RequestsViewHolder(@NonNull View itemView)
         {
             super(itemView);
-
             UserName = itemView.findViewById(R.id.user_profile_name);
             UserStatus = itemView.findViewById(R.id.user_status);
             ProfileImage = itemView.findViewById(R.id.users_profile_image);
@@ -225,15 +221,14 @@ public class RequestAdapter extends RecyclerView.Adapter<RequestAdapter.Requests
             CancelButton =itemView.findViewById(R.id.request_cancel_btn);
             onlineStatus = itemView.findViewById(R.id.user_online_status);
 
-
         }
     }
 
     public static class MessageAdapter extends RecyclerView.Adapter<MessageAdapter.MessageViewHolder>
     {
-        private List<Messages> userMessagesList;
-        private FirebaseAuth mAuth;
-        private DatabaseReference usersRef;
+        List<Messages> userMessagesList;
+         FirebaseAuth mAuth;
+        DatabaseReference usersRef;
 
         public MessageAdapter(List<Messages> userMessagesList)
         {

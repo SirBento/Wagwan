@@ -35,7 +35,6 @@ public class UserAdapter extends  RecyclerView.Adapter<UserAdapter.ViewHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-
         final ChatUsers users = list.get(position);
         Picasso.get().load(users.getImage()).placeholder(R.drawable.profile_image).into(holder.ProfileImage);
         holder.UserName.setText(users.getName());
@@ -46,7 +45,6 @@ public class UserAdapter extends  RecyclerView.Adapter<UserAdapter.ViewHolder> {
             if (users.getOnlineStatus().equals("online")) {
 
                 holder.onlineStatus.setVisibility(View.VISIBLE);
-
             } else if (!users.getOnlineStatus().equals("offline")) {
 
                 holder.onlineStatus.setVisibility(View.INVISIBLE);
